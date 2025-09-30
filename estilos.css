@@ -1,0 +1,214 @@
+/* Selector universal */
+* {
+    margin: 0;
+    padding: 0;
+    --color-html: #fcede8;
+    --color-css: #e8f3f8;
+    --color-js: #f8f8e8;
+    --color-borde-html: #E44D26;
+    --color-borde-css: #264DE4;
+    --color-borde-js: #026E00;
+    --color-texto: #333;
+    --color-fondo: #f4f4f9;
+    --color-header: #005a9c;
+    --color-isil: #00adf1;
+}
+
+
+body {
+    background-image: url(img/fondo.jpeg);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabecera */
+header {
+    background-color: var(--color-header);
+    color: white;
+    padding: 15px 0;
+    height: 90px;
+}
+
+/* alinear logo y titulo del sitio usando flexbox */
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    border-radius: 50%;
+    height: 80px;
+}
+
+header .titulo {
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.863);
+    color: var(--color-isil);
+    padding: 8px 4px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos del contenido y secciones */
+
+main {
+    padding: 20px 0;
+}
+
+/* Linea horizontal */
+hr {
+    border: 0;
+    height: 1.5px;
+    background-color: var(--color-texto);
+
+}
+
+main .desarrollado {
+    display: flex;
+    justify-content: flex-end;
+
+    margin-top: 5px;
+
+}
+
+main .desarrollado p {
+    display: inline-block;
+    padding: 5px 5px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.863);
+    color: var(--color-texto);
+    font-style: italic;
+}
+
+section {
+    margin: 45px 0;
+}
+
+
+.intro h2,
+.seccion-definiciones h2,
+.seccion-analogia h2,
+.seccion-resumen h2 {
+    border-bottom: 2px solid var(--color-texto);
+    display: inline-block;
+    margin-bottom: 18px;
+}
+
+.intro p {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.definiciones-caja,
+.analogia-caja {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.caja {
+    border: 1px solid var(--color-texto);
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+
+}
+
+.caja p span {
+    background-color: yellow;
+}
+
+.caja.html h3 {
+    background-color: var(--color-borde-html);
+    color: white;
+    padding: 5px 0;
+    border-radius: 2px;
+
+}
+
+.caja.css h3 {
+    background-color: var(--color-borde-css);
+    color: white;
+    padding: 5px 0;
+    border-radius: 2px;
+}
+
+.caja.javascript h3 {
+    background-color: var(--color-borde-js);
+    color: white;
+    padding: 5px 0;
+    border-radius: 2px;
+}
+
+.caja img {
+    width: 80px;
+    height: auto;
+}
+
+.caja p {
+    font-size: 17px;
+    margin: 25px 0;
+}
+
+.caja.html {
+    background-color: var(--color-html);
+    padding: 25px;
+
+}
+
+.caja.css {
+    background-color: var(--color-css);
+    padding: 25px;
+}
+
+.caja.javascript {
+    background-color: var(--color-js);
+    padding: 25px;
+}
+
+
+.imagen-desarrollo-web {
+    padding: 40px 0;
+    
+}
+
+.imagen-desarrollo-web img {
+    max-width: 60%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+  border-radius: 4px; 
+}
+
+
+blockquote {
+    font-style: italic;
+    background-color: var(--color-fondo);
+    border-left: 5px solid var(--color-header);
+    margin: 0;
+    padding: 20px 22px;
+    font-size: 17px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.7);
+    border-radius: 5px;
+
+}
+
+/* Estilos para pie de página */
+
+footer {
+        text-align: center;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    color: #0000008c;
+    font-size: 14px;
+}
